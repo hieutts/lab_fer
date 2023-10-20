@@ -1,17 +1,12 @@
+
 .App {
-  text-align: center;
-}
+  /* min-height: 100vh; */
+} 
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* .App {
+} 
+
 
 .App-header {
   background-color: #282c34;
@@ -26,13 +21,94 @@
 
 .App-link {
   color: #61dafb;
-}
+} */
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+} */
+.navbar {
+   
+}
+.navbar-toggler {
+  margin-left: 13px;
+}
+ 
+.overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   /* background: rgba(90, 80, 80, 0.7); */
+   transition: opacity 500ms;
+   visibility: hidden;
+   opacity: 0;
+    bottom: 0;
+  }
+  .overlay:target {
+   visibility: visible;
+   opacity: 1;
+  }
+  .popup {
+    padding: 5px;
+    background: #de6021;
+    border-radius: 5px;
+    width: 60%;
+    height: 83%;
+    position: relative;
+    margin: 80px auto;
+   /* transition: all 5s ease-in-out; */
+  }
+  .popup .popup-left {
+    width: 40%;
+  }
+  .popup img{ width: 100%; height: 88%; padding: 4px;}
+  .popup h2 {
+   margin-top: 0;
+   color: #333;
+   font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    cursor: pointer;
+    top: 10px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    position: absolute;
+  }
+  .popup .close:hover {color: #06D85F;}
+  .popup .content {
+    padding: 4px;
+    overflow: auto;
+     height: 100%;
+     width: 60%;
+     font-weight: 500;
+  }
+  .popup .btn-watch {
+    background-color: rgb(217,83,79);
+    height: 10%;
+    margin: 5px;
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+  }
+
+  .popup .content-btn {
+    background-color: rgb(217,83,79);
+    text-decoration: none;
+    border: none;
+  }
+
+
+/* Contact */
+.form-group {
+  padding: 4px;
 }
